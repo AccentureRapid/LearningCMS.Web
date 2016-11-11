@@ -7,10 +7,12 @@
  * @returns {{allPosts: allPosts, allPostsByTag: allPostsByTag, allPostsBySearchTerm: allPostsBySearchTerm, featuredPosts: featuredPosts, post: post}}
  * @constructor
  */
-function BlogService($http, $sce, config) {
+function BlogService($http, $sce, config, Restangular) {
 
     function allPosts() {
-        return getData('posts?filter[category_name]=post');
+        var test = Restangular.all('accounts');
+        return test;
+        //return getData('posts?filter[category_name]=post');
     }
 
     function allPostsByTag(tag) {

@@ -11,6 +11,10 @@ angular.module('myApp.view1', ['ngRoute'])
 
 .controller('View1Ctrl', ['BlogService', function (BlogService) {
 
-    var apiCallFunction = BlogService.allPosts();
+    BlogService.allPosts().getList().then(function(data) {
+    $scope.allAccounts = data;
+  }   ,function() {
+    console.log("There was an error saving");
+  });
 
 }]);
