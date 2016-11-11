@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # angular-seed — the seed for AngularJS apps
 
 This project is an application skeleton for a typical [AngularJS](http://angularjs.org/) web app.
@@ -305,3 +306,7 @@ For more information on AngularJS please check out http://angularjs.org/
 [protractor]: https://github.com/angular/protractor
 [selenium]: http://docs.seleniumhq.org/
 [travis]: https://travis-ci.org/
+=======
+# LearningCMS.Web
+An angular template to start with angular 1.x version. Simple but best.
+>>>>>>> 8e070a4f6051689fb4386182a7b0a4c17a2239a7
